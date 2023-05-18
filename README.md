@@ -1,4 +1,4 @@
-# mymalloc.c - A segregated free list dynamic memory allocator implementation written in C.
+# mymalloc.c - A segregated free list dynamic memory allocator implementation.
 Written as part of CMU's Computer Systems Course. Received a 100% grade.
 ## Info on dynamic memory allocators
 A dynamic memory allocator maintains the heap in memory as a collection of blocks that are either allocated or free, and have variable size.
