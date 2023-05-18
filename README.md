@@ -16,7 +16,7 @@ A union with data based on allocation status:
     * A footer with the same metadata as the header.
 * If block is allocated: A block payload with allocated data.
 ### Segregated free lists
-Along with the implicit list, I keep track of free blocks in a segregated free list. An array of 16 indices manages 16 segregated free lists of increasing size classes. The set of size classes/flist_ind is: ${ [0, 32], [33, 64], [65, 128], \cdots , [262145, \text{MAX}] }$.
+Along with the implicit list, I keep track of free blocks in a segregated free list. An array of 16 indices manages 16 segregated free lists of increasing size classes. The list of size classes/flist_ind is: $[0, 32], (32, 64], (62, 128], \cdots , (262144, \text{INT_MAX}]$.
 
 Segregated free lists are doubly-linked and blocks are inserted based on the LIFO principle.
 ## Demos
